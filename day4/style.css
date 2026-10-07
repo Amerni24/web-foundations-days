@@ -1,0 +1,75 @@
+:root {
+  --bg: #f5f5f5;
+  --text: #1a1a1a;
+  --card: #ffffff;
+  --border: #bbbbbb;
+  --button-bg: #1f4e8c;
+  --button-text: #ffffff;
+  --warning-color: #e67300;
+  --over-color: #c00000;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eeeeee;
+  --card: #1e1e1e;
+  --border: #444444;
+  --button-bg: #5a9bf0;
+  --button-text: #101010;
+  --warning-color: #ffa94d;
+  --over-color: #ff6b6b;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 24px;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+label {
+  display: block;
+  margin: 16px 0 6px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* "over" comes after "warning" so it wins when both classes are present */
+.warning {
+  color: var(--warning-color);
+}
+
+.over {
+  color: var(--over-color);
+  font-weight: bold;
+}
